@@ -199,19 +199,25 @@ a:hover {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-@media (max-width: 400px) {
-  .section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-}
+    @media (max-width: 400px) {
+      .section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+    }
 .section-first {
   padding-top: 200px;
   padding-bottom: 80px;
 }
+    @media (max-width: 400px) {
+      .section-first {
+        padding-top: 380px;
+        padding-bottom: 0px;
+      }
+    }
 .section-home {
   padding-top: 100px;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
 }
 
 .extra-padding {
@@ -227,22 +233,22 @@ a:hover {
   border-bottom-style: solid;
   border-bottom-color: #D9D9D9;
 }
-@media (max-width: 991px) {
-  .divider {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 150px;
-    margin-right: 150px;
-  }
-}
-@media (max-width: 400px) {
-  .divider {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-}
+    @media (max-width: 991px) {
+      .divider {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+    }
+    @media (max-width: 400px) {
+      .divider {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+    }
 .divider-small {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -358,22 +364,22 @@ li .active {
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 30 30'%3e%3cpath stroke='#000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-@media (min-width: 992px) {
-  .hidden-mobile {
-    visibility: hidden;
-  }
-}
-@media (max-width: 991px) {
-  .sidenav {
-    padding-left: 0px;
-  }
-  ul:first-child {
-    padding-top: 15px;
-  }
-  ul:last-child {
-    padding-bottom: 15px;
-  }
-}
+    @media (min-width: 992px) {
+      .hidden-mobile {
+        visibility: hidden;
+      }
+    }
+    @media (max-width: 991px) {
+      .sidenav {
+        padding-left: 0px;
+      }
+      ul:first-child {
+        padding-top: 15px;
+      }
+      ul:last-child {
+        padding-bottom: 15px;
+      }
+    }
 .navbar-toggler-icon {
   width: 1.2em;
   height: 1.2em;
@@ -422,48 +428,44 @@ li .active {
 
 
 
+
+
 /* ---------   Icons   -------- */
 .icon-plus {
-  position: relative;
+  position: absolute;
   float: left;
-  top: -10vh;
-  left: 0vw;
+  top: 10vh;
+  left: -5vw;
   z-index: -100;
 }
     @media (max-width: 991px) {
       .icon-plus {
-        top: 30vh;
+        top: 10vh;
         left: 5vw;
       }
     }
-    @media (max-width: 400px) {
+    @media (max-width: 577px) {
       .icon-plus {
-        top: 40vh;
-        left: 15vw;
+        top: -22vh;
+        left: 12vw;
       }
     }
 .icon-arrows {
-  position: relative;
+  position: absolute;
   float: right;
-  top: 10vh;
-  left: 80vw;
+  top: -10vh;
+  right: -10vw;
   z-index: -100;
 }
-    @media (max-width: 1300px) {
-      .icon-arrows {
-        top: 10vh;
-        left: 85vw;
-      }
-    }
     @media (max-width: 991px) {
       .icon-arrows {
-        top: 10vh;
-        left: 80vw;
+        top: -10vh;
+        right: 0vw;
       }
     }
     @media (max-width: 577px) {
       .icon-arrows {
-        top: 15vh;
+        top: -45vh;
         left: 35vw;
       }
     }
@@ -477,16 +479,13 @@ li .active {
 .icon-chapter {
   position: absolute;
   float: left;
-  top: -10vh;
+  top: -100px;
   right: 0vw;
   z-index: -100;
   overflow: hidden;
 }
-/* .icon-fastforward {
-  position: absolute;
-  float: left;
-  top: -10vh;
-  right: 0vw;
-  z-index: -100;
-  overflow: hidden;
-} */
+    @media (max-width: 577px) {
+      .icon-chapter {
+        display: none;
+      }
+    }
