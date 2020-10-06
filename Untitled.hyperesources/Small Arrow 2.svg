@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="83px" height="131px" viewBox="0 0 83 131" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Small Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Latest" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Small-Arrow" transform="translate(41.500000, 65.500000) rotate(180.000000) translate(-41.500000, -65.500000) translate(0.000000, -0.000000)">
+            <path d="M51.7983043,0 L83,61.5106545 L71,68.458 L71,120.774294 L53.0060908,131 L49,56.3248942 L57.993,53.248 L48.8357323,38.4189498 L37,8.75 L51.7983043,0 Z" id="Back" fill="#8F0202"></path>
+            <path d="M36.8581473,9 L68,70 L53,61.287 L53,131 L15,108.449438 L15,39.213 L0,30.5 L36.8581473,9 Z" id="Front" fill="#E50000"></path>
+        </g>
+    </g>
+</svg>

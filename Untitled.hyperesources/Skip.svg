@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="137px" height="102px" viewBox="0 0 137 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Skip</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Latest" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Skip">
+            <path d="M0,31 C0,31 3.69920554,31.9433853 11.0976166,33.830156 L11.0976166,33.830156 L89.7565476,78.0051993 L95,86.2495667 L95,102 L0,47.2426343 L0,47.2426343 Z M42,0 C42,0 45.6992055,0.943385326 53.0976166,2.83015598 L53.0976166,2.83015598 L131.756548,47.0051993 L137,55.2495667 L137,71 L42,16.2426343 L42,16.2426343 Z" id="Back" fill="#569800"></path>
+            <path d="M95,31 L95,86 L0,31 L95,31 Z M137,0 L137,55 L42,0 L137,0 Z" id="Front" fill="#77D200"></path>
+        </g>
+    </g>
+</svg>

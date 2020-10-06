@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="183px" height="299px" viewBox="0 0 183 299" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Big Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Latest" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Big-Arrow" transform="translate(91.500000, 149.500000) scale(-1, 1) rotate(180.000000) translate(-91.500000, -149.500000) translate(0.000000, -0.000000)">
+            <path d="M107.989899,0 L183,144.840183 L164.010101,156 L155,146.649 L155,283.879614 L127.857143,299 L117,129.851007 L132.200371,123 L132.276,123.064 L100.86776,90.4657534 L89,11.1598174 L107.989899,0 Z" id="Back" fill="#8F0202"></path>
+            <path d="M88.8931788,11 L164,154 L128,133.673 L128,299 L37,246.382022 L37,82.292 L0,61.4016393 L88.8931788,11 Z" id="Front" fill="#E50000"></path>
+        </g>
+    </g>
+</svg>

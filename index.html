@@ -14,27 +14,65 @@
     <link href="css/main.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- <script>
+      function layoutRequest(hypeDocument, element, event) {
+        //returns [{name: xxx; height:xxx; width:xxx; breakpoint: xxx}, ...]
+        var _layouts = hypeDocument.layoutsForSceneNamed(hypeDocument.currentSceneName());
+        //current Layoutname
+        var layoutName = hypeDocument.currentLayoutName();
+
+        //get data for current Layout -> {name: xxx; height:xxx; width:xxx; breakpoint: xxx}
+        var res = null;
+
+        for (var i = 0; i < _layouts.length; i++) {
+          var Obj = _layouts[i];
+          if (Obj.name === layoutName) {
+            res = Obj;
+            break;
+          }
+        }
+
+        // set hypeDocumentElement height depending on layoutratio ...
+        if (res) {
+          var ratioScale = res['width'] / res['height'];
+          var hypeEl = document.getElementById(hypeDocument.documentId());
+          var currentWidth = hypeEl.offsetWidth;
+          var newHeight = currentWidth / ratioScale;
+          hypeEl.style.height = newHeight + 'px';
+
+
+          hypeDocument.relayoutIfNecessary();
+        }
+        return false
+
+      }
+
+      if ("HYPE_eventListeners" in window === false) {
+        window.HYPE_eventListeners = Array();
+      }
+      window.HYPE_eventListeners.push({
+        "type": "HypeLayoutRequest",
+        "callback": layoutRequest
+      });
+    </script> -->
 
 
   </head>
   <body data-spy="scroll" data-target="#navscroll" data-offset="200">
 
-    <div class="header">
-      <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
-      </div>
-    </div>
-
 
     <div id="content">
       <div class="container-fluid" style="max-width: 1600px;">
         <div class="row justify-content-sm-center">
-          <div class="col-12 col-sm-12 col-md-11 col-lg-7 col-xl-7">
+          <div class="col-12 col-sm-12 col-md-11 col-lg-8 col-xl-7">
 
 
             <div id="shareing-is-caring" class="row justify-content-sm-center section-home" style="text-align: center;">
-              <div class="col col-md-10 col-lg-12">
+                <div class="col col-md-10 col-lg-12">
                 <img class="home-header" src="images/home-header.png">
+                <!-- <div id="untitled_hype_container" class="HYPE_document" style="margin:auto;position:static;width:100%;height:50%;overflow:hidden;z-index:-100;">
+              		<script type="text/javascript" charset="utf-8" src="Untitled.hyperesources/untitled_hype_generated_script.js?72639"></script>
+              	</div> -->
                 <h1>Shareing is Caring</h1>
                 <p class="large">Someone called Tom wrote a basic guide for his mates about how to trade on the ASX.</p>
                 <button onclick="location.href='shareing-is-caring.html'" type="button" class="btn btn-primary disclaimer-button button-homepage">Read the Guide</button><br>
@@ -45,17 +83,20 @@
             <div class="row section">
               <div class="col">
                 <h2>About this Guide</h3>
-                <p>My name is Tom. I am new to share trading. To get me started I asked some fund managers, financial advisors, a seasoned journalist and some people who are successful in business about how to do it. I also read some stuff online. I then wrote down what they said in the most simple way possible and then bought some shares. I only invested in what seem like ethical companies. <mark>Over the last 12 months I’m up 15.8% across a portfolio of 22 companies.</mark> It’s not enough to buy a house but it is enough for a couple of epic nights out so game on.</p>
+                <p>My name is Tom. I am new to share trading. To get started I asked some fund managers, financial advisors, a seasoned journalist and some people who are successful in business about how to do it. I also read some stuff online. I then wrote down what they said and then bought some shares. I only invested in what seem like ethical companies. <mark>Over the last 12 months I’m up 15.8% across a portfolio of 22 companies.</mark> It’s not enough to buy a house but it is enough for a couple of epic nights out so game on.</p>
                 <p>Some of my friends have asked me to share what I’ve learnt about shares with them. Shareing is caring right? So I wrote this document. Boom! This isn't a get rich quick guide. It's just a summary of everything that people have shared with me. Welcome.</p>
+                <p><strong><code class="red">WARNING:</code></strong> This document is a bit of fun. I hope it’s helpful but I am also aware it’s not serious and expert financial advice. It’s just some very basic ideas and thoughts from someone with no formal financial training. It’s nothing more and nothing less than that.</p>
                 <button onclick="location.href='shareing-is-caring.html'" type="button" class="btn btn-primary btn-block disclaimer-button">Read the Guide</button>
-                <div><blockquote><p class="quote">“Buy low, sell high. But if you can’t afford to hold then don’t buy at all”</p>- Journalist</blockquote></div>
+                <div><blockquote><p class="quote">“The safe money in shares is selling answers to others on how to trade shares”</p>- Financial adviser</blockquote></div>
               </div>
             </div>
 
 
             <div class="row section" style="padding-top: 0;">
               <div class="col disclaimer" style="color: #888888;">
-                <p><em><strong>Disclaimer:</strong> Tom ain’t God. He can’t predict the future and neither can anyone else. The information on this website is for general information purposes only. It is not intended as legal, financial or investment advice and should not be construed or relied on as such. Use your own brain. Own your own life. Tom could be wrong so before making any commitment of a legal or financial nature you should seek advice from a qualified and registered legal practitioner or financial or investment adviser. Just remember that those are simply fancy names for everyday people who could also be incomitent. They could also be a con artist or desperate fraud looking to make money.</p>
+                <p><em><strong>Disclaimer:</strong> Tom ain’t God. He can’t predict the future and neither can anyone else. I mean people do make guesses and then  they sometimes get it right. They then call themselves a soothsayer, futurist or prognosticator. It’s a good trick.</p>
+                <p>Anyway, the information in this website is for general information purposes only. It is not intended as legal, financial or investment advice and should not be construed or relied on as such. Use your own brain. Own your own life. I could be completely wrong so before making any commitment of a legal or financial nature you should seek advice from a qualified and registered legal practitioner or financial or investment adviser.</p>
+                <p>Just remember that those are simply fancy names for everyday people who could be incompetent. They could also be a con artist or a fraud in a desperate situation looking to make money off you. Sometimes big companies are full of frauds who are looking to exploit their customers in order to please their bosses and maintain job security. The bosses push them hard to do this because they are trying to please other people too - like the investors.</p>
                 <p>In legal disclaimers you also have to say like no material contained within this website should be construed or relied upon as providing recommendations in relation to any legal or financial product. Also, don’t be an asshole. Karma really seems to be a thing and hopefully it (whatever it is) doesn't’ smight me for writing that.</em></p>
               </div>
             </div>
